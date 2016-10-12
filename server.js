@@ -13,7 +13,8 @@ db.on('error', console.error);
 db.once('open', function() {
     console.log("DB Connected")
 });
-mongoose.connect(process.env.MONGODB_URI);
+var mongoURI=process.env.MONGODB_URI
+mongoose.connect(mongoURI);
 
 //create a scheme for the urls
 var urlSchema = new mongoose.Schema({
