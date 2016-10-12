@@ -4,6 +4,7 @@ var mongoose = require('mongoose');
 var validUrl = require('valid-url');
 var shortid = require('shortid');
 var app = express();
+var dotenv = require('dotenv');
 //prevents warnings from showing but no effect on program
 mongoose.Promise = global.Promise
 
