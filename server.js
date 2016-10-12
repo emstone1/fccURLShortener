@@ -64,7 +64,7 @@ function addtoDB(urlpath, baseurl) {
             url: urlpath
         });
         newurl.save(function(err, newurl) {
-            if (err) return console.error(err);
+        if (err) throw err;
         });
         var json = {
             original_url: urlpath,
